@@ -57,3 +57,52 @@ The workshop will cover the following topics:
 
     -   Learning how to fine-tune prompts to improve the quality of responses from GPT.
     -   Optimizing interactions with GPT to achieve better outcomes.
+
+# Workshop setup
+
+1. Create an OpenAI account for free credits (Use a personal email address for the free credits)
+https://www.saintlad.com/get-free-trial-credits-for-openai/
+
+2. Ensure you have a Secret API key for OpenAI
+https://www.howtogeek.com/885918/how-to-get-an-openai-api-key/
+Download the Git repository for the workshop
+```$> git clone https://github.com/twCatalyst/genAIVodqa2023```
+OR,
+Download the Zip file from the following URL - https://github.com/twCatalyst/genAIVodqa2023 and unzip the folder into your choice of folder on your machine
+
+Ensure you have Python 3 installed on your machine:
+
+Windows:
+https://docs.python.org/3/using/windows.html
+
+Mac:
+https://www.scaler.com/topics/python/how-to-install-python-on-macos/
+
+Set up a Python virtual environment on your machine and follow along with the course
+Go to the folder genAIVodqa2023 and try one of the following commands on your terminal/DOS Window/IDE Terminal
+
+```$> python -m venv venv ```
+OR,
+
+```$> python3 -m venv venv```
+
+You should see a venv folder in the genAIVodqa2023 folder if you are successful
+
+Once you create the venv folder, activate your virtual environment by running the following command
+
+```$> source ./venv/bin/activate ```
+ 
+Install the requirements (Make sure you are in the genAIVodqa2023 folder)
+		
+```$> pip install -r requirements.txt```
+		OR, 
+```$> pip3 install -r requirements.txt```
+
+Once you have installed your requirements, run the following command from the terminal/DOS Window/IDE Terminal
+
+```$> python session2-simple-calls/simple.call.py```
+
+If you used pip3 above after setting up the virtual environment, run the following:
+
+```$> python3 session2-simple-calls/simple.call.py```
+ 
