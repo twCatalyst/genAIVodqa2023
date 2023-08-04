@@ -31,4 +31,4 @@ response = openai.ChatCompletion.create(
 
 # Print only the text reply
 for i in range(NUM_RESPONSES):
-    print(response["choices"][i]["message"]["content"])
+    print(response['choices'][i]['message']['content'])
