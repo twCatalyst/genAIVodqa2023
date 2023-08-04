@@ -98,6 +98,12 @@ Install the requirements (Make sure you are in the genAIVodqa2023 folder)
 		OR, 
 ```$> pip3 install -r requirements.txt```
 
+Set up your OpenAI secret key as an environment variable
+On Macs
+```export OPENAI_KEY=<your_secret_key>```
+On Windows
+```set OPENAI_KEY=<your_secret_key>```
+
 Once you have installed your requirements, run the following command from the terminal/DOS Window/IDE Terminal
 
 ```$> python session2-simple-calls/simple.call.py```
