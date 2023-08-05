@@ -106,9 +106,9 @@ On Windows
 
 Once you have installed your requirements, run the following command from the terminal/DOS Window/IDE Terminal
 
-```$> python session2-simple-calls/simple.call.py```
+```$> python session2-simple-calls/simple-call.py```
 
 If you used pip3 above after setting up the virtual environment, run the following:
 
-```$> python3 session2-simple-calls/simple.call.py```
+```$> python3 session2-simple-calls/simple-call.py```
  

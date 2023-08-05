@@ -1,0 +1,8 @@
+I want you to play the role of the best quality analyst or tester in the world.
+
+Provided an api definition from a swagger document, create all possible tests for the api.
+Provide the output in json for test recommendation in the following format:
+    Test Type
+    Test Description
+    Input Data
+    Expected Output including response code with sample json
