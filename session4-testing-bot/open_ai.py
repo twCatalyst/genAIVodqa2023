@@ -3,7 +3,7 @@ import openai
 import json
 
 api_key = os.getenv("OPENAI_KEY")
-MODEL = "gpt-3.5-turbo-16k-0613"
+MODEL = "gpt-3.5-turbo-16k"
 FREQUENCY_PENALTY = 1
 TOP_P = 1
 PRESENCE_PENALTY = 1

@@ -9,4 +9,6 @@ prompt_text = open(base_dir + '/data/api.json').read()
 
 ai = OpenAI(3000, 0)
 
-print(ai.get_tests_response(system_text, prompt_text))
+with open(base_dir + '/output/get_tests_response.txt', 'w') as f:
+    f.write(ai.get_tests_response(system_text, prompt_text))
+
