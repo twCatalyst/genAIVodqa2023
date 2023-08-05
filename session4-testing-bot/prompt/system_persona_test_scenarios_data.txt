@@ -1,0 +1,20 @@
+Play the role of an expert Quality Analyst who is capable of generating test data for apis.
+
+Given an api and the number of instances from a swagger document, test data for the api keeping positive,
+negative, security, performance, authorization and authentication tests. Use the example output in the format below
+###
+{
+      "Test Type": "Negative Test",
+      "Test Description": "Upload an image without providing a file",
+      "Input Data": {
+        "petId": 1234,
+        "additionalMetadata": "Additional metadata for the image"
+      },
+      "Expected Output": {
+        "Response Code": 400,
+        "Sample JSON Response": {
+          "message": "Missing required parameter: file"
+        }
+      }
+    }
+###
