@@ -90,7 +90,11 @@ You should see a venv folder in the genAIVodqa2023 folder if you are successful
 
 Once you create the venv folder, activate your virtual environment by running the following command
 
+On Macs 
 ```$> source ./venv/bin/activate ```
+
+On Windows run
+```$> venv/Scripts/activate.bat```
  
 Install the requirements (Make sure you are in the genAIVodqa2023 folder)
 		
