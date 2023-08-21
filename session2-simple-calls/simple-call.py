@@ -10,24 +10,26 @@ FREQUENCY_PENALTY = 1
 TOP_P = 1
 PRESENCE_PENALTY = 1
 
-response = openai.ChatCompletion.create(
-  model=MODEL,
-  messages=[
-    {
-      "role": "user",
-      "content": "Hamburger and "
-    }
-  ],
-  temperature=TEMPERATURE,
-  max_tokens=MAX_RESPONSE_TOKENS,
-  top_p=TOP_P,
-  n=NUM_RESPONSES,
-  frequency_penalty=FREQUENCY_PENALTY,
-  presence_penalty=PRESENCE_PENALTY
-)
+def make_chat_completion(prompt):
+    response = openai.ChatCompletion.create(
+        model=MODEL,
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        temperature=TEMPERATURE,
+        max_tokens=MAX_RESPONSE_TOKENS,
+        top_p=TOP_P,
+        n=NUM_RESPONSES,
+        frequency_penalty=FREQUENCY_PENALTY,
+        presence_penalty=PRESENCE_PENALTY
+    )
+    return response
 
-# Dump the response to see the output of the response
-# print(response)
+user_prompt = "Hamburger and "
+response = make_chat_completion(user_prompt)
 
 # Print only the text reply
 for i in range(NUM_RESPONSES):
