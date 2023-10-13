@@ -1,0 +1,74 @@
+{
+    "Test Type": "Positive Test",
+    "Test Description": "Test uploading an image with valid petId and file",
+    "Input Data": {
+        "petId": 12345,
+        "additionalMetadata": "additional data",
+        "file": "image.jpg"
+    },
+    "Expected Output": {
+        "Response Code": 200,
+        "Response Body": {
+            "message": "Image uploaded successfully"
+        }
+    }
+},
+{
+    "Test Type": "Negative Test",
+    "Test Description": "Test uploading an image with invalid petId",
+    "Input Data": {
+        "petId": "abc",
+        "additionalMetadata": "additional data",
+        "file": "image.jpg"
+    },
+    "Expected Output": {
+        "Response Code": 400,
+        "Response Body": {
+            "error": "Invalid petId"
+        }
+    }
+},
+{
+    "Test Type": "Negative Test",
+    "Test Description": "Test uploading an image without a file",
+    "Input Data": {
+        "petId": 12345,
+        "additionalMetadata": "additional data"
+    },
+    "Expected Output": {
+        "Response Code": 400,
+        "Response Body": {
+            "error": "No file provided"
+        }
+    }
+},
+{
+    "Test Type": "Security Test",
+    "Test Description": "Test uploading an image without required permissions",
+    "Input Data": {
+        "petId": 12345,
+        "additionalMetadata": "additional data",
+        "file": "image.jpg"
+    },
+    "Expected Output": {
+        "Response Code": 403,
+        "Response Body": {
+            "error": "Unauthorized access"
+        }
+    }
+},
+{
+    "Test Type": "Stress Test",
+    "Test Description": "Test uploading a large file",
+    "Input Data": {
+        "petId": 12345,
+        "additionalMetadata": "additional data",
+        "file": "large_image.jpg"
+    },
+    "Expected Output": {
+        "Response Code": 200,
+        "Response Body": {
+            "message": "Image uploaded successfully"
+        }
+    }
+}
