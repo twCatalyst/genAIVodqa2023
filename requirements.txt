@@ -1,3 +1,2 @@
 openai
 urllib3<2.0
-aider-chat
